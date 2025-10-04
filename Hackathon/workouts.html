@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Workouts - FitLife</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <div class="logo-icon">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Heart shape -->
+                        <path d="M28 48C28 48 8 32 8 20C8 14.477 12.477 10 18 10C21.5 10 24.5 12 28 15C31.5 12 34.5 10 38 10C43.523 10 48 14.477 48 20C48 32 28 48 28 48Z" fill="#2ecc71"/>
+                        <!-- ECG line -->
+                        <path d="M12 28H16V30H20V26H24V32H28V24H32V34H36V28H40V30H44" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Dumbbell -->
+                        <rect x="8" y="36" width="8" height="4" rx="2" fill="#666"/>
+                        <rect x="40" y="36" width="8" height="4" rx="2" fill="#666"/>
+                        <rect x="20" y="37" width="16" height="2" rx="1" fill="#fff"/>
+                    </svg>
+                </div>
+                <span>Fitlife</span>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <button class="nav-cta" onclick="location.href='plans.html'">Join now</button>         
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="open menu">☰</button>
+            </div>
+    </header>
+
+
+  <main class="workouts-main">
+    <div class="workouts-hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Intensive Workout Sessions</h1>
+          <p>Push your limits with our high-intensity training programs designed by certified trainers.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="workouts-section">
+      <div class="container">
+        <h2 class="fade-in">Featured Workout Sessions</h2>
+        
+        <div class="workout-showcase">
+          <div class="showcase-image fade-in">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" alt="Battle Rope Training Session" width="600" height="400">
+            <div class="image-overlay">
+              <h3>Battle Rope Training</h3>
+              <p>High-intensity full-body workout</p>
+            </div>
+          </div>
+          
+          <div class="workout-details slide-in-right">
+            <h3>Battle Rope Training</h3>
+            <p class="workout-description">
+              Experience the power of battle rope training - a full-body workout that builds strength, 
+              endurance, and mental toughness. Perfect for burning calories and building functional strength.
+            </p>
+            <div class="workout-stats">
+              <div class="stat">
+                <span class="stat-number">45</span>
+                <span class="stat-label">Minutes</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">High</span>
+                <span class="stat-label">Intensity</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Calories</span>
+              </div>
+            </div>
+            <button class="btn primary">Start Workout</button>
+          </div>
+        </div>
+
+        <div class="workout-categories">
+          <h3 class="fade-in">Workout Categories</h3>
+          <div class="category-tabs">
+            <button class="tab-btn active" onclick="showCategory('cardio')">Cardio</button>
+            <button class="tab-btn" onclick="showCategory('strength')">Strength</button>
+            <button class="tab-btn" onclick="showCategory('flexibility')">Flexibility</button>
+            <button class="tab-btn" onclick="showCategory('hiit')">HIIT</button>
+          </div>
+        </div>
+
+        <!-- Cardio Workouts -->
+        <div class="video-category" id="cardio" style="display: block;">
+          <h4 class="category-title">Cardio Workouts</h4>
+          <div class="video-grid">
+            <div class="video-card fade-in">
+              <h3>Full Body Cardio Blast</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZllXIKITzfg?si=_-SwpytvxUw8-x0L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>High-energy cardio workout to burn calories and improve cardiovascular health.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-fire"></i> 400 cal</span>
+                  <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Dance Cardio Fun</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200%" src="https://www.youtube.com/embed/uKEPTDLgSWs?si=493NNUEgGHgG7-43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Fun and energetic dance cardio session that makes working out enjoyable.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 25 min</span>
+                  <span><i class="fas fa-fire"></i> 350 cal</span>
+                  <span><i class="fas fa-signal"></i> Beginner</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Running in Place</h3>
+              <div class="video-container">
+               <iframe width="100%" height="200%" src="https://www.youtube.com/embed/XONkWMuC6uA?si=t3s6nj_IgCm85-oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="video-info">
+                <p>Perfect indoor cardio workout that requires no equipment or space.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 20 min</span>
+                  <span><i class="fas fa-fire"></i> 300 cal</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strength Workouts -->
+        <div class="video-category" id="strength" style="display: none;">
+          <h4 class="category-title">Strength Training</h4>
+          <div class="video-grid">
+            <div class="video-card fade-in">
+              <h3>Upper Body Strength</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/3p8EBPVZ2Iw" title="Upper Body Strength Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Build strong arms, chest, and shoulders with this comprehensive upper body workout.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 35 min</span>
+                  <span><i class="fas fa-dumbbell"></i> Weights</span>
+                  <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Lower Body Power</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/7TL_V7Tb1tY" title="Lower Body Strength Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Target your legs and glutes with this intense lower body strength session.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 40 min</span>
+                  <span><i class="fas fa-dumbbell"></i> Weights</span>
+                  <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Bodyweight Strength</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/4v-cHhJZ1X4" title="Bodyweight Strength Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Build strength using only your body weight - no equipment needed!</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-user"></i> No Equipment</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Core Strength</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/2pLT-olgUJs" title="Core Strength Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Strengthen your core with this intense ab and back workout session.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 25 min</span>
+                  <span><i class="fas fa-user"></i> No Equipment</span>
+                  <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Full Body Strength</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ML6W7IRnx0Q" title="Full Body Strength Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Complete full body strength workout targeting all major muscle groups.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 45 min</span>
+                  <span><i class="fas fa-dumbbell"></i> Weights</span>
+                  <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Push-Up Challenge</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/8s1xSqNq4k8" title="Push-Up Challenge Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Master different push-up variations to build upper body strength and endurance.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 20 min</span>
+                  <span><i class="fas fa-user"></i> No Equipment</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flexibility Workouts -->
+        <div class="video-category" id="flexibility" style="display: none;">
+          <h4 class="category-title">Flexibility & Stretching</h4>
+          <div class="video-grid">
+            <div class="video-card fade-in">
+              <h3>Morning Stretch</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ptj-NEb5oB4" title="Morning Stretch Routine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Start your day right with this gentle morning stretch routine.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 15 min</span>
+                  <span><i class="fas fa-leaf"></i> Gentle</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Yoga Flow</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/6PjCLewMmIE" title="Yoga Flow for Flexibility" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Improve flexibility and balance with this flowing yoga sequence.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 25 min</span>
+                  <span><i class="fas fa-leaf"></i> Yoga</span>
+                  <span><i class="fas fa-signal"></i> Beginner</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Post-Workout Stretch</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/IjH_8pdybfs" title="Post-Workout Stretching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Essential post-workout stretching to prevent injury and improve recovery.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 20 min</span>
+                  <span><i class="fas fa-leaf"></i> Recovery</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Hip Flexibility</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/-trGf8O3ue4?si=xLvMP8OZ4Rf4sr36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Improve hip mobility and flexibility with targeted stretching exercises.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 18 min</span>
+                  <span><i class="fas fa-leaf"></i> Mobility</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Back Stretch</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/7V-EbW-DmN0?si=8iqeHMaKCFi1UOpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Relieve back tension and improve spinal flexibility with these stretches.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 22 min</span>
+                  <span><i class="fas fa-leaf"></i> Therapeutic</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Full Body Stretch</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZllXIKITzfg?si=full789" title="Full Body Stretch Session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Complete full body stretching routine for overall flexibility and relaxation.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-leaf"></i> Relaxing</span>
+                  <span><i class="fas fa-signal"></i> All Levels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIIT Workouts -->
+        <div class="video-category" id="hiit" style="display: none;">
+          <h4 class="category-title">HIIT Workouts</h4>
+          <div class="video-grid">
+            <div class="video-card fade-in">
+              <h3>20-Minute HIIT</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/M0uO8X3_t5s?si=bcd890" title="20 Minute HIIT Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Short but intense HIIT session for maximum fat burning in minimal time.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 20 min</span>
+                  <span><i class="fas fa-fire"></i> 500 cal</span>
+                  <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Tabata HIIT</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/5t5h3Z2-wpI?si=efg123" title="Tabata HIIT Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Classic Tabata protocol - 20 seconds work, 10 seconds rest for maximum intensity.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 15 min</span>
+                  <span><i class="fas fa-fire"></i> 400 cal</span>
+                  <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>HIIT for Beginners</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/7vEJMH99C7Q?si=hij456" title="Beginner HIIT Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Perfect introduction to HIIT with modified exercises for beginners.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 25 min</span>
+                  <span><i class="fas fa-fire"></i> 300 cal</span>
+                  <span><i class="fas fa-signal"></i> Beginner</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Fat Burn HIIT</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/2pLT-olgUJs?si=burn123" title="Fat Burn HIIT Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>High-intensity fat burning workout designed to maximize calorie burn.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 18 min</span>
+                  <span><i class="fas fa-fire"></i> 450 cal</span>
+                  <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Cardio HIIT</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/8s1xSqNq4k8?si=cardio456" title="Cardio HIIT Session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Cardio-focused HIIT workout to improve cardiovascular endurance and stamina.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 22 min</span>
+                  <span><i class="fas fa-fire"></i> 380 cal</span>
+                  <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="video-card fade-in">
+              <h3>Full Body HIIT</h3>
+              <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZllXIKITzfg?si=full789" title="Full Body HIIT Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <p>Complete full body HIIT workout targeting all muscle groups for total body conditioning.</p>
+                <div class="video-stats">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-fire"></i> 550 cal</span>
+                  <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Fitlife</h3>
+        <p>Transform your body. Transform your life.</p>
+      </div>
+      
+      <div class="footer-contact">
+        <a href="tel:+919814325090"><i class="fas fa-phone"></i> +91 98143 25090</a>
+        <a href="mailto:innovators@gmail.com"><i class="fas fa-envelope"></i> innovators@gmail.com</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Fitlife. All rights reserved. | Made with ❤️ for fitness enthusiasts</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

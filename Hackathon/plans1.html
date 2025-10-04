@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalized Plans - FitLife</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+<header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <div class="logo-icon">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Heart shape -->
+                        <path d="M28 48C28 48 8 32 8 20C8 14.477 12.477 10 18 10C21.5 10 24.5 12 28 15C31.5 12 34.5 10 38 10C43.523 10 48 14.477 48 20C48 32 28 48 28 48Z" fill="#2ecc71"/>
+                        <!-- ECG line -->
+                        <path d="M12 28H16V30H20V26H24V32H28V24H32V34H36V28H40V30H44" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Dumbbell -->
+                        <rect x="8" y="36" width="8" height="4" rx="2" fill="#666"/>
+                        <rect x="40" y="36" width="8" height="4" rx="2" fill="#666"/>
+                        <rect x="20" y="37" width="16" height="2" rx="1" fill="#fff"/>
+                    </svg>
+                </div>
+                <span>Fitlife</span>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <button class="nav-cta" onclick="location.href='plans.html'">Join now</button>         
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="open menu">☰</button>
+            </div>
+    </header>
+
+
+
+  <main class="plans-main">
+    <div class="plans-hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Personalized Fitness Plans</h1>
+          <p>Choose the perfect workout plan tailored to your fitness level and goals. Our expert-designed programs will help you achieve sustainable results.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="plans-section">
+      <div class="container">
+        <h2 class="section-title fade-in">Choose Your Fitness Level</h2>
+        <p class="section-subtitle fade-in">Select the plan that matches your current fitness level and goals</p>
+
+        <div class="plans-grid">
+          <div class="plan-card beginner-plan fade-in">
+            <div class="plan-header">
+              <div class="plan-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3>Beginner</h3>
+              <div class="plan-badge">Perfect for Starters</div>
+            </div>
+            <div class="plan-content">
+              <p class="plan-description">Start your fitness journey with our beginner-friendly 3-day workout plan featuring bodyweight exercises and basic movements.</p>
+              <ul class="plan-features">
+                <li><i class="fas fa-check"></i> 3 workouts per week</li>
+                <li><i class="fas fa-check"></i> Bodyweight exercises only</li>
+                <li><i class="fas fa-check"></i> 30-45 minute sessions</li>
+                <li><i class="fas fa-check"></i> Progressive difficulty</li>
+                <li><i class="fas fa-check"></i> Video demonstrations</li>
+              </ul>
+              <div class="plan-duration">
+                <span class="duration-label">Duration:</span>
+                <span class="duration-value">8 weeks</span>
+              </div>
+            </div>
+            <button class="btn primary plan-btn">Start Beginner Plan</button>
+          </div>
+
+          <div class="plan-card intermediate-plan featured-plan fade-in">
+            <div class="plan-header">
+              <div class="plan-icon">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3>Intermediate</h3>
+              <div class="plan-badge featured">Most Popular</div>
+            </div>
+            <div class="plan-content">
+              <p class="plan-description">Take your fitness to the next level with our comprehensive 5-day plan combining strength, cardio, and flexibility training.</p>
+              <ul class="plan-features">
+                <li><i class="fas fa-check"></i> 5 workouts per week</li>
+                <li><i class="fas fa-check"></i> Mixed equipment training</li>
+                <li><i class="fas fa-check"></i> 45-60 minute sessions</li>
+                <li><i class="fas fa-check"></i> HIIT & strength training</li>
+                <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                <li><i class="fas fa-check"></i> Progress tracking</li>
+              </ul>
+              <div class="plan-duration">
+                <span class="duration-label">Duration:</span>
+                <span class="duration-value">12 weeks</span>
+              </div>
+            </div>
+            <button class="btn primary plan-btn">Start Intermediate Plan</button>
+          </div>
+
+          <div class="plan-card advanced-plan fade-in">
+            <div class="plan-header">
+              <div class="plan-icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3>Advanced</h3>
+              <div class="plan-badge">For Experts</div>
+            </div>
+            <div class="plan-content">
+              <p class="plan-description">Challenge yourself with our intense 6-day plan featuring progressive overload, HIIT sessions, and advanced training techniques.</p>
+              <ul class="plan-features">
+                <li><i class="fas fa-check"></i> 6 workouts per week</li>
+                <li><i class="fas fa-check"></i> Advanced techniques</li>
+                <li><i class="fas fa-check"></i> 60-90 minute sessions</li>
+                <li><i class="fas fa-check"></i> Progressive overload</li>
+                <li><i class="fas fa-check"></i> Personal trainer access</li>
+                <li><i class="fas fa-check"></i> Custom meal plans</li>
+              </ul>
+              <div class="plan-duration">
+                <span class="duration-label">Duration:</span>
+                <span class="duration-value">16 weeks</span>
+              </div>
+            </div>
+            <button class="btn primary plan-btn">Start Advanced Plan</button>
+          </div>
+        </div>
+
+        <div class="plan-benefits fade-in">
+          <h3>Why Choose Our Plans?</h3>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <i class="fas fa-user-md"></i>
+              <h4>Expert Designed</h4>
+              <p>Created by certified trainers and fitness professionals</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-mobile-alt"></i>
+              <h4>Mobile Friendly</h4>
+              <p>Access your workouts anywhere with our mobile app</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-chart-line"></i>
+              <h4>Track Progress</h4>
+              <p>Monitor your improvements with detailed analytics</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-users"></i>
+              <h4>Community Support</h4>
+              <p>Join our supportive fitness community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Fitlife</h3>
+        <p>Transform your body. Transform your life.</p>
+      </div>
+      
+      <div class="footer-contact">
+        <a href="tel:+919814325090"><i class="fas fa-phone"></i> +91 98143 25090</a>
+        <a href="mailto:innovators@gmail.com"><i class="fas fa-envelope"></i> innovators@gmail.com</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Fitlife. All rights reserved. | Made with ❤️ for fitness enthusiasts</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
